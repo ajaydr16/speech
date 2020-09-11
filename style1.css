@@ -13,7 +13,7 @@ body
     min-height: 100vh;
     background: #f2f3f7;
 }
-#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition
+#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition, #speechsdkStartContinuousTranslation, #speechsdkStopContinuousTranslation
 {
     position: relative;
     display: inline-block;
@@ -31,22 +31,27 @@ body
     inset 2px 2px 4px rgba(255, 255, 255, 0.1),
     2px 2px 8px rgba(0, 0, 0, 0.15);
 }
-#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition:hover
+#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition, #speechsdkStartContinuousTranslation, #speechsdkStopContinuousTranslation:hover
 {
     box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
     inset -2px -2px 12px rgba(255, 255, 255, 0.5),
     inset 2px 2px 4px rgba(255, 255, 255, 0.1),
     inset 2px 2px 8px rgba(0, 0, 0, 0.15);  
 }
-#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition:hover span
+#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition, #speechsdkStartContinuousTranslation, #speechsdkStopContinuousTranslation:hover span
 {
     display: inline-block;
     transform: scale(0.98);
+}
+
+#speechsdkStartContinuousRecognition, #speechsdkStopContinuousRecognition, #languageTargetOptions, #voiceOutput{
+    display: none;
 }
 li{
     float: left;
     list-style: none;
 }
+
 
 #phraseDiv{
 
